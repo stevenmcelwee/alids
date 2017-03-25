@@ -10,7 +10,7 @@ McElwee, S. (2017). Active learning for intrusion detection using k-means cluste
 Compiling and use:
 
 Compiling:
-1. Ensure that the Weka libraries are installed in your classpath.
+1. Ensure that the Weka 3.7.13 libraries are installed in your classpath.
 2. Compile the source files in src/stevenmcelwee/ActiverLearnerIDS
 3. Create a single jar file, such as ActiveLearnerIDS.jar
 
@@ -22,3 +22,7 @@ From the command line:
 Requirements:
 Refer to alids.prop file for the list of configurable properties. Most important is
 the KDD Cup datafiles that are needed - they must be in ARFF format.
+This code was tested with Java 1.8 (64-bit version).
+This code was built for and tested with Weka 3.7.13.
+Ensure that a large heap size is used. Testing of the prototype used a 4GB heap.
+
