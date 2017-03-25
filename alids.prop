@@ -1,0 +1,33 @@
+' Name of the unlabeled dataset. Can be labeled for testing, since classes are cleared
+unlabeledDatasetFileName=/Personal/Dev/ActiveLearnerIDS/data/KDDCup99_full.arff
+
+' The name of the labeled dataset for training oracle
+oracleTrainingDatasetFileName=/Personal/Dev/ActiveLearnerIDS/data/KDDCup99_full_deduped.arff
+
+' The path to the serialized Oracle
+oracleFileName=/Personal/Dev/ActiveLearnerIDS/oracle.ser
+
+' If retained, the path to the serialized Learner
+learnerFileName=/Personal/Dev/ActiveLearnerIDS/learner.ser
+
+' For output only. Will be overwritten upon completion of the full dataset
+masterDataFileName=/Personal/Dev/ActiveLearnerIDS/masterdata.arff
+
+' Number of trees that will be created by random forest
+numTrees=100
+
+' Confidence used to determine if classified result should be saved as master data
+minConfidence=0.95
+
+' Batch size for processing the full dataset. Also number of records in simulated day
+batchSize=100000
+
+' Strategy for sampling records to send to the oracle. Values: random or cluster
+strategy=cluster
+
+' Number of records that will be sent to te oracle for labeling
+numInstancesForOracle=300
+
+' Save learner for reuse? If it is saved and exists on the file system, it will automatically
+' be used when the program is run.
+saveLearner=false
